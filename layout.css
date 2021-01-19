@@ -1,0 +1,28 @@
+        .fixed-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+        .fixed-header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    top: 0;
+    z-index: 1024;
+}
+
+        .page-header {
+    margin: 10px 0;
+    border-color: #0000FF;
+    width: 105% !important;
+    color: Blue;
+}
+
+        .fixed-container {
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    top: 44px;
+    height: 86%;
+}

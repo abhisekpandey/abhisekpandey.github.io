@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Up</title>
+	<style type="text/css">
+.popup-overlay.active{
+visibility: visible;
+}
+
+.popup-content.active {
+visibility:visible;
+}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script type="text/javascript">
+	$('document').ready(function(){
+$(".open").on("click", function(){
+$(".popup, .popup-content").addClass("active");
+});
+
+
+//removes the "active" class to .popup and .popup-content when the "Close" button is clicked 
+$(".close, .popup").on("click", function(){	
+$(".popup, .popup-content").removeClass("active");
+});
+})();
+</script>
+</head>
+<body>
+	<div class="popup-content">
+    <h2>Pop-Up</h2>
+    <p> pop-up using jquery !!!!!!</p>
+   <!--popup's close button-->
+    <button class="close">Close</button>    
+</div>
+</div>
+
+<h2>jQuery Pop-Up Example</h2>
+<button class="open">Open</button>
+</body>
+</html>

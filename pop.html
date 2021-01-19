@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	 <dialog id="window">  
+     <h3>Sample Dialog!</h3>  
+     <p>It's clicked</p>  
+     <button id="exit">Close Dialog</button>
+    </dialog>  
+
+  <button id="show">Show Dialog</button> 
+<script type="text/javascript">
+(function() {  
+
+            var dialog = document.getElementById('window');  
+            document.getElementById('show').onclick = function() {  
+                dialog.show();  
+            };  
+            document.getElementById('exit').onclick = function() {  
+                dialog.close();  
+            };
+        })();
+        	
+        </script>
+</body>
+</html>
