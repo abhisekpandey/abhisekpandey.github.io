@@ -1,167 +1,155 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset=utf-8>
-	<title>Slides and Structure</title>
-	<style>
-
-	.paragraph{
-		color: green;
-	}
-	body {
-		/*width: 600px;*/
-		margin: auto;
-		font-family: sans-serif;
-	}
-
-	#contact { 
-		background: #e3e3e3; 
-		padding: 1em 2em; 
-		position: relative;
-	}
-
-	.js #contact {
-		position: absolute;
-		top: 0;
-		width: inherit;
-		display: none;
-	}	
-
-	#contact h2 { margin-top: 0; }
-
-	#contact ul { padding: 0; }
-
-	#contact li { 
-		list-style: none;
-		margin-bottom: 1em;
-	}
-
-	/* Close button on form */
-	.close {
-		position: absolute;
-		right: 10px;
-		top: 10px;
-		font-weight: bold;
-		font-family: sans-serif;
-		cursor: pointer;
-	}	
-
-	/* Form inputs */
-	input, textarea { width: 100%; line-height: 2em;}
-	input[type=submit] { width: auto;  }
-	label { display: block; text-align: left; }
-
-	</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1" />
+	<title>Portfolio Abhisek Pandey</title>
+	<script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/foundation-sites/dist/css/foundation.min.css">
+	<link rel="stylesheet" href="">
+	<script src="bower_components/foundation-sites/dist/js/foundation.min.js" charset="utf-8"></script>
+	<script src="bower_components/normalize-css/normalize.css" charset="utf-8"></script>
+	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
+	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+	<script src="bower_components/custombox/dist/custombox.min.js"></script>
+	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
+	<link rel="stylesheet" href="assets/styles/styles.css">
 </head>
+
 <body>
+	<!-- Watch how to use it on YouTube -->
+	<!-- https://youtu.be/ddLuZXs8Uyw -->
 
 
-<article>
-    <h1 class="headerUS">Contact Us</h1>  
-    <p>Our Office is located at <strong>Kathmandu,Nepal</strong></p>
-    <p><b>Phone:</b> 01-123456</p>
-    <p><b>Website:</b><em> www.google.com </em></p> 
-    </article>
+	<!-- Watch how to deploy it live -->
+	<!-- https://youtu.be/E1dqffpUlMA -->
+	<div class="wrapper">
+		
 
-<div id="contact">
-	<h2>Contact Me</h2>
-	<form action="#">
-		<ul>
-			<li>
-				<label for="name">Name: </label>
-	 			<input name="name" id="name">
-			</li>
+		<section id="about">
+			<div class="row">
+				<div class="small-12 large-8 large-offset-2 columns text-center">
+					<div class="profile-photo" style="background-image: url(assets/images/0-02-06-f05913ca61e0a4c1817c21d2760e8e02898b8fff3379fc70cc9779f02b5e95bc_full.JPG);">
+					</div>
+					<div class="details">
+						<h2>Hi, I'm Abhisek. I...<br> <span id="writing-text"><span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 column">
+					<div class="cta text-center">
+						<a class="my-button cta-button expand form-button" href="mailto:aryan.abi25@gmail.com">Get In Touch</a>
+					</div>
+				</div>
+				<div class="small-12 column">
+					<div class="my-arrow-div text-center">
+						<a href="https://github.com/abhisekpandey"><i class="fa fa-github-alt fa-2x"></i></a>
+						<a href="https://instagram.com/pabishek"><i class="fa fa-instagram fa-2x"></i></a>
+						<a href="http://www.youtube.com/jakobowsky"><i class="fa fa-youtube fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
 
-			<li>
-				<label for="email">Email Address: </label>
-		 		<input name="email" id="email">
-			</li>
-
-			<li>
-				<label for="comments">What's Up?</label>
-				<textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-			</li>
-			<li>
-				<input type="submit" value="Submit">
-			</li>
-		</ul>
-	</form>
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		</section>
 
 
-<script>
+		<section id="experience">
 
-(function() {
-	
-$('html').addClass('js');
-	$('p').addClass('paragraph');
+			<div class="row column">
+				<div class="small-12">
+					<h2 class="text-center">My Experience</h2>
+					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-laptop"></i>
+					<h3>Front-end</h3>
+					<ul>
+						<li>html(5)</li>
+						<li>css(3)</li>
+						<li>Javascript</li>
+						<li>Jquery</li>
+						<li>Bootstrap</li>
+						<li>Semantics-UI</li>
+						<li>Api | Ajax</li>
+					</ul>
+				</div>
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-database"></i>
+					<h3>Back-end</h3>
+					<ul>
+						<li>c#</li>						
+						<li>SQL</li>
+						<li>Mongo</li>
+						<li>Restful Web Services</li>
+					</ul>
+				</div>
+				<div class="small-12 medium-4 columns text-center experience-topics">
+					<i class="fi-star"></i>
+					<h3>Tools</h3>
+					<ul>
+						<li>Bower</li>
+						<li>Atom || Webstorm</li>
+						<li>Github && Bitbucket</li>
+						<li>Gulp</li>
+					</ul>
+				</div>
+			</div>
 
-var contactForm = {
+		</section>
 
-	container: $('#contact'),
+		<!--  -->
 
-	config: {
-		effect: 'slideToggle',
-		speed: 500
-	},
+		<section id="teaching">
+			<h2 class="text-center">Teaching</h2>
+			<div class="row">
+				<div class="small-12 medium-8 medium-offset-2">
+					<p class="text-center tag-line">In the last couple of years, I've taught programming to hundreds of students both privately in person and remotely. Here are some of the domains I've helped students with...</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<div class="teaching-domains">
+					</div>
+				</div>
+			</div>
+		</section>
 
-	init: function(config) {
-		$.extend(this.config, config);
+		<section id="footer-cta">
+			<h2 class="text-center">Wanna work with me?</h2>
+			<p></p>
+			<div class="row text-center">
+				<div class="small-12 medium-8 medium-offset-2 columns">
+					<p class="text-center">I'm currently available for work.</p>
+				</div>
+				<div class="small-12 columns" id="startButtonDiv">
+					<a class="my-button form-button" href="mailto:jakob.wolitzki@gmail.com">Start Now</a>
+				</div>
+			</div>
+		</section>
 
-		$('<button></button>', {
-			text: 'Contact Me'
-		})
-			.appendTo( 'article:first' )
-			.on( 'click', this.show );
-	},
+		<footer id="footer">
+			<div class="row text-center">
+				<div class="small-12 medium-6 medium-offset-3 columns">
+					<p id="logo">APK</p>
+					<p id="copyright">Copyright &copy; 2021 | Abhisek  Pandey Kazi</p>
+				</div>
+			</div>
+		</footer>
 
-	show: function() {
-		var cf = contactForm,
-			container = cf.container,
-			config = cf.config;
 
-		if ( container.is(':hidden') ) {
-			contactForm.close.call(container);
-			container[config.effect](config.speed);
-		}
-	},
 
-	close: function() {
-		var $this = $(this), // #contact
-			config = contactForm.config;
-
-		if ( $this.find('span.close').length ) return;
-
-		$('<span class=close>X</span>')
-			.prependTo(this)
-			.on('click', function() {
-				// this = span
-				$this[config.effect](config.speed);
-			})
-	}	 
-	 
-};
-
-contactForm.init({
-	// effect: 'fadeToggle',
-	speed: 300
-});
-
-})();
-
-</script>
-
+	</div>
+	<script src="assets/scripts/app.js" charset="utf-8"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
